@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PTS Online Library</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    </head>
+    <body>
+        <div class="bg-grey-100 shadow ">
+            <nav class="flex justify-between max-w-6xl mx-auto py-4 px-3">
+                <!--main nav-->
+                <div class="flex space-x-4 items-center">
+                    <!--LOGO-->
+                    <a href="#" class="font-semibold text-lg"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-slate-900 inline">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
+                      </svg>
+                      <span>PTS Library</span></a>
+                     <!--primary navbar-->
+                    <div class="space-x-4">
+                        <a href="#"class="text-grey-700 hover: text-grey-900 font-semibold">Features</a>
+                        <a href="#"class =" text-grey-700 hover: text-grey-900 font-semibold">Pricings</a>
+                        <a href="{% url 'contact' %}"class =" text-grey-700 hover: text-grey-900 font-semibold">Contact Us</a>
+
+                    </div>
+                </div>
+
+                <!--secondary navbar-->
+                <div >
+                    <a href="#" class="text-grey-700 hover: text-grey-900 font-semibold py-2 px-3">Login In</a>
+                    <a href="#" class="bg-slate-800 text-white rounded py-2 px-3 hover:bg-slate-900 hover:text-white shadow">Sign Up</a>
+                </div>
+            </nav>
+        </div>
+        <div class="text-center py-30 bg-slate-900 text-white text-2xl ">
+            <!--HERO SECTION-->
+            <h1 class="text-3xl">A World of Knowledge Awaits</h1>
+            <h3 class="mb-10">Discover books, ideas, and resources that inspire learning, creativity, and growth - all in one place.</h3>
+            <button class="py-2 px-3 bg-slate-700 hover:bg-slate-800 px-6 rounded hover:-translate-y-3 transition-all ease-in-out">Sign Up</button>
+        </div>
+        <div class="flex p-10 m-10 space-x-10 text-lg" >
+            <!--MAIN BODY-->
+            <div class=" flex-2">
+                <div class="shadow-xl p-10 m-10">
+                    <!-- ABOUT US AND MESSAGE-->
+                    <h2 class="text-2xl my-10">About Us</h2>
+                    <p>
+                        Our library is more than a place to read—it’s a place to discover.
+                        We aim to encourage curiosity, creativity, and a love for learning by providing a supportive environment filled with stories, ideas, and opportunities to grow.
+                    </p>
+                </div>
+                <div class="shadow-xl p-10 m-10 mt-20">
+                    <h2 class="text-2xl my-10">Founder's Message</h2>
+                    <p>
+                        This library was built with a simple purpose: to create a safe and inspiring space for readers to learn, explore, and grow.
+                        Books have the power to change perspectives, spark ideas, and connect people - and we hope this library becomes a place you return to, again and again.
+
+                        You are always welcome here.
+                    </p>
+                    <div class="flex mt-10 space-x-4">
+                        <img  class="rounded-full w-50px h-50px" src="IMAGES/profilepicture.jfif" width="100px">
+                        <ul>
+                            <li class="text-lg font-semibold">Olivia Bennett</li>
+                            <li class="text-gray-500 text-sm">Ceo & Founder.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="shadow-xl p-5 flex-1">
+                <h1 class="my-5 text-2xl ">Join Our Memebership</h1>
+                <!--JOIN THE MEMBERSHIP-->
+                <form action="" method="post">
+                    <div class="p-2">
+                        <label for="full_name">Full Name</label>
+                        <input class="block w-full p-2" type="text" id="full_name" placeholder="John Smith" required>
+                    </div>
+                    <div class="p-2">
+                        <label for="email_address">Email Address</label>
+                        <input  class="block w-full p-2" type="text" id="email_address" placeholder="john@gmail.com" required>
+                    </div>
+                    <div class="p-2">
+                        <label for="membership_type">Membership Type</label>
+                        <input class="block w-full p-2"  type="text" id="membership_type" placeholder="Student/Adult/General" reaquired>
+                    </div>
+                    <div class="p-2">
+                        <label for="duration">Duration</label>
+                        <input   class="block w-full p-2" type="text" id="duration" placeholder="Monthly/Annual" reaquired>
+                    </div>
+                    <div class="p-2 flex space-x-3">
+                        <label for="aggrement">I agree to the library rules and policies</label>
+                        <input  type="checkbox" id="aggrement">
+                    </div>
+                    <div>
+                        <button class="p-3 text-center bg-slate-700 w-full rounded hover:bg-slate-900 text-white mt-5 hover:shadow-lg" type="submit">Submit</button>
+                    </div>
+                    <div class="my-5 text-gray-500">
+                        <!-- why become a member-->
+                         <h4>Why Become a Member?</h4>
+                         <h5>Unlimited access. Peaceful spaces. A community that loves learning.</h5>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+        <h1 class="px-40 py-3 mb-10 text-2xl bg-gray-100 shadow-lg">MOST POPULAR BOOKS</h1>
+        <div class="flex space-x-30 justify-center pb-20">
+            <!--4 CARDS-->
+            <div class="p-7 bg-grey-200 shadow-lg hover:shadow-xl rounded hover:-translate-y-3 transition-all ease-in-out">
+                <!--CARD 1-->
+                <img src="IMAGES/BOOK1.jfif" width="200px">
+            </div>
+            <div class="p-7 bg-grey-200 shadow-lg hover:shadow-xl rounded hover:-translate-y-3 transition-all ease-in-out">
+                <!--CARD 2-->
+                <img src="IMAGES/BOOK2.jpg" width="200px">
+            </div>
+            <div class="p-7 bg-grey-200 shadow-lg hover:shadow-xl rounded hover:-translate-y-3 transition-all ease-in-out">
+                <!--CARD 3-->
+                <img src="IMAGES/BOOK3.jpg" width="200px">
+            </div>
+            <div class="p-7 bg-grey-200 shadow-lg hover:shadow-xl rounded hover:-translate-y-3 transition-all ease-in-out">
+                <!--CARD 4-->
+                <img src="IMAGES/BOOK4.jfif" width="200px">
+            </div>
+        </div>
+        <footer class="flex  justify-between p-10 text-white bg-slate-900">
+            <!-- footerr-->
+             <div>
+                <h2 class="text-lg mb-3">About Us</h2>
+                <!--BRIEF-->
+                <h3>PTS Online Library</h3>
+                <h4>“A space for reading, learning, and growth.”</h4>
+                <!--social media links-->
+                <div>
+                    <ul class="flex space-x-4 text-white">
+                        <li><i class="bi bi-facebook"></i></li>
+                        <li><i class="bi bi-twitter"></i></li>
+                        <li><i class="bi bi-linkedin"></i></li>
+                        <li><i class="bi bi-instagram"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-lg mb-3">Quick Links</h2>
+                <ul>
+                    <!--QUICK LINKS-->
+                    <li><a href="#">⇒ Home</a></li>
+                    <li> <a href="#">⇒ About Us</a></li>
+                    <li><a href="#">⇒ Memebership</a></li>
+                    <li><a href="#">⇒ Collection</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="text-lg mb-3">Contact Us</h2>
+                <!-- CONTACT US-->
+                <h4>📍 Central Avenue, Greenfield City</h4>
+                <h4>✉️ Email: @ptslibrary@gmail.com</h4>
+                <h4>📞 Phone: +97 345 2345</h4>
+                <h4>🕐 Mon – Fri: 9:00 AM – 7:00 PM</h4>
+
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PTS Library - Contact Us</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body class ="bg-slate-950">
+        <div class ="bg-white">
+             <nav class="flex justify-between bg-white max-w-6xl mx-auto py-4 px-3">
+                    <!--main nav-->
+                    <div class="flex space-x-4 items-center">
+                        <!--LOGO-->
+                        <a href="#" class="font-semibold text-lg"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-slate-900 inline">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
+                          </svg>
+                          <span>PTS Library</span></a>
+                         <!--primary navbar-->
+                        <div class="space-x-4">
+                            <a href="#"class="text-grey-700 hover: text-grey-900 font-semibold">Features</a>
+                            <a href="{% url 'home' %}"class="text-grey-700 hover: text-grey-900 font-semibold">Home</a>
+                            <a href="#"class =" text-grey-700 hover: text-grey-900 font-semibold">Pricings</a>
+                            <a href="{% url 'contact' %}"class =" text-grey-700 hover: text-grey-900 font-semibold">Contact Us</a>
+                        </div>
+                    </div>
+             
+                    <!--secondary navbar-->
+                    <div >
+                        <a href="#" class="text-grey-700 hover: text-grey-900 font-semibold py-2 px-3">Login In</a>
+                        <a href="#" class="bg-slate-800 text-white rounded py-2 px-3 hover:bg-slate-900 hover:text-white shadow">Sign Up</a>
+                    </div>
+                </nav>
+        </div>
+        <div class="text-center py-30 bg-slate-900 text-white text-2xl ">
+            <!--HERO SECTION-->
+            <h1 class="text-3xl">Lets talk books!</h1>
+            <h3 class="mb-10">Discover books, ideas, and resources that inspire learning, creativity, and growth - all in one place.</h3>
+        </div>
+        <!--ACTUAL BODY PART-->
+        <h1 class="pt-10 bg-slate-950  text-center md:text-xl text-sm text-yellow-400 "><span class="md:text-2xl text-lg text-white">Reach Us :</span>  cinexmovies@gmail.com</h1>
+        <div class=" pt-15 bg-slate-950 flex justify-center">
+            <form  class="bg-gray-500/10 rounded-lg md:p-10 p-5 m-10" method="post" action="">
+                <h1 class="text-center p-5 text-yellow-300 md:text-4xl text-2xl  ">Contact Us</h1>
+                <div class="text-white">
+                    <label class="md:text-xl text-lg" for="first_name">First Name</label>
+                    <input class="w-full p-3 mt-3 bg-gray-500/7 rounded-2xl " id="first_name" type="text" placeholder="John" required>
+                </div>
+                <div class="text-white">
+                    <label class="md:text-xl text-lg" for="last_name">Last Name</label>
+                    <input class="w-full p-3 mt-3 bg-gray-500/7 rounded-2xl " id="last_name" type="text" placeholder="Smith" required>
+                </div>
+                <div class="text-white">
+                    <label class="md:text-xl text-lg" for="email">Email Address</label>
+                    <input class="w-full p-3 mt-3 bg-gray-500/7 rounded-2xl " id="email" type="text" placeholder="johnsmith@gmail.com" required>
+                </div>
+                <div class="text-white">
+                    <label class="md:text-xl text-lg" for="message">Meesage</label>
+                    <textarea class="w-full p-3 mt-3 bg-gray-500/7 rounded-2xl " id="message" rows="5" placeholder="Type Here..."></textarea>
+                </div>
+                <a class="bg-yellow-500 hover:bg-yellow-600 p-2  w-full block text-center rounded-2xl text-white">Sumbit</a>
+            </form>
+        </div>
+        <!--FOLLOW US ON-->
+         <div>
+              <h1 class="text-yellow-400 text-center md:text-xl text-lg m-7 ">Follow Us On:</h1>
+            <div>
+                <ul class="flex space-x-4 text-white md:text-3xl text-lg justify-center space-x-10 mb-10">
+                    <li><i class="bi bi-facebook text-white hover:text-yellow-400 "></i></li>
+                    <li><i class="bi bi-twitter text-white hover:text-yellow-400"></i></li>
+                    <li><i class="bi bi-linkedin text-white hover:text-yellow-400"></i></li>
+                    <li><i class="bi bi-instagram text-white hover:text-yellow-400"></i></li>
+                </ul>
+            </div>
+         </div>
+        <!--foooterr-->
+        <footer class="bg-gray-950 p-10 text-white text-center">
+            <h1 class="md:text-3xl text-xl">We're Always Listening.</h1>
+            <h3 class="md:text-xl text-xs pb-5 ">Because every great experience starts with a <span class="font-semibold text-yellow-400">converstation.</span></h3>
+            <hr class="md:p-5 p-10">
+            <h1 class="text-center text-xs md:text-xl">Copyright © 2026 PTS library. All right reseved.</h1>
+        </footer>
+    </body>
+</html>
